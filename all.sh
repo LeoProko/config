@@ -1,2 +1,0 @@
-./basic.sh
-./vim.sh
