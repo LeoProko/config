@@ -30,3 +30,8 @@ F3
 - [window or tab num]
 ```
 
+### new tab
+```
+tt
+```
+
