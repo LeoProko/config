@@ -1,3 +1,4 @@
+rm -rf ~/.vim
 cp .vimrc ~/.vimrc
 
 mkdir -p ~/.vim/pack/plugins/start/
