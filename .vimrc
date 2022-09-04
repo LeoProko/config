@@ -23,6 +23,11 @@ nmap <C-l> <C-W>><C-W>>
 nmap <C-h> <C-W><<C-W><
 " Remove vertical lines on window division
 set fillchars=vert:\ 
+" Tabs and spaces handling
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 
 " NERDTree
