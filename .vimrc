@@ -8,11 +8,8 @@ map tt :tabnew<CR>
 " Allow backspace over indent
 :set backspace=indent,eol,start
 " Automatic close brackets
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
+inoremap (<CR> (<CR>)<ESC>O
 inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
 " Resize horzontal split window
 nmap <C-k> <C-W>-<C-W>-
 nmap <C-j> <C-W>+<C-W>+
@@ -31,6 +28,8 @@ set shiftwidth=4
 " NERDTree
 " Open navigation on F3
 map <F3> :NERDTreeToggle<CR>
+" Show hidden files
+let NERDTreeShowHidden=1
 " Autorefresh on tree focus
 function! NERDTreeRefresh()
     if &filetype == "nerdtree"
@@ -58,6 +57,7 @@ execute pathogen#infect()
 let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
 " Inlay hints
 let g:ycm_enable_inlay_hints = 1
+" Go to
 nnoremap <leader>dd :YcmCompleter GoTo<CR>
 " Remove preview window
 set completeopt-=preview
