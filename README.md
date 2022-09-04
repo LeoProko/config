@@ -30,6 +30,16 @@ F3
 - [window or tab num]
 ```
 
+### swap windows
+```
+-s [window to swap]
+```
+
+### resize windows
+```
+^C[hjkl]
+```
+
 ### new tab
 ```
 tt

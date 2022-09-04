@@ -15,6 +15,12 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+" Resize horzontal split window
+nmap <C-k> <C-W>-<C-W>-
+nmap <C-j> <C-W>+<C-W>+
+" Resize vertical split window
+nmap <C-l> <C-W>><C-W>>
+nmap <C-h> <C-W><<C-W><
 
 
 " NERDTree
