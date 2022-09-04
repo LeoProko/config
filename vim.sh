@@ -4,9 +4,6 @@ cp .vimrc ~/.vimrc
 mkdir -p ~/.vim/pack/plugins/start/
 
 
-# Rust
-cd ~/.vim/pack/plugins/start/ && git clone https://github.com/rust-lang/rust.vim
-
 # NERDTree
 cd ~/.vim/pack/plugins/start/ && git clone https://github.com/preservim/nerdtree
 
