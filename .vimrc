@@ -31,6 +31,13 @@ set shiftwidth=4
 " NERDTree
 " Open navigation on F3
 map <F3> :NERDTreeToggle<CR>
+" Autorefresh on tree focus
+function! NERDTreeRefresh()
+    if &filetype == "nerdtree"
+        silent exe substitute(mapcheck("R"), "<CR>", "", "")
+    endif
+endfunction
+autocmd BufEnter * call NERDTreeRefresh()
 
 
 " NERDComment
