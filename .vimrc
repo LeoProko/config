@@ -21,6 +21,8 @@ nmap <C-j> <C-W>+<C-W>+
 " Resize vertical split window
 nmap <C-l> <C-W>><C-W>>
 nmap <C-h> <C-W><<C-W><
+" Remove vertical lines on window division
+set fillchars=vert:\ 
 
 
 " NERDTree
