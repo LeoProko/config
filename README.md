@@ -21,8 +21,13 @@ F3
 ```
 
 ### go to definition
+- Horizonal split
 ```
 \dd
+```
+- Vertical split
+```
+\sd
 ```
 
 ### choose window
