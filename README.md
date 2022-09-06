@@ -29,6 +29,10 @@ F3
 ```
 \sd
 ```
+- New tab
+```
+\td
+```
 
 ### choose window
 ```

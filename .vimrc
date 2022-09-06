@@ -63,8 +63,9 @@ let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
 " Inlay hints
 let g:ycm_enable_inlay_hints = 1
 " Go to
-nnoremap <leader>dd :YcmCompleter GoTo<CR>
+nnoremap <leader>dd :aboveleft YcmCompleter GoTo<CR>
 nnoremap <leader>sd :rightbelow vertical YcmCompleter GoTo<CR>
+nnoremap <leader>td :tab YcmCompleter GoTo<CR>
 " Remove preview window
 set completeopt-=preview
 
