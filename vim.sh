@@ -16,6 +16,10 @@ cd ~/.vim/pack/plugins/start/ && git clone https://github.com/t9md/vim-choosewin
 # Brackets closer
 cd ~/.vim/pack/plugins/start/ && git clone https://github.com/Townk/vim-autoclose.git
 
+# Vim move
+cd ~/.vim/pack/plugins/start/ && git clone https://github.com/matze/vim-move.git
+
+
 # Pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 

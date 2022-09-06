@@ -50,3 +50,9 @@ F3
 tt
 ```
 
+### move lines
+select lines and:
+```
+Shift[hjkl]
+```
+

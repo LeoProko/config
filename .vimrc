@@ -48,6 +48,11 @@ let g:NERDCompactSexyComs = 1
 let g:NERDCommentEmptyLines = 1
 
 
+" Vim Move
+let g:move_normal_option = 1
+let g:move_key_modifier_visualmode = 'S'
+
+
 " Pathogen for syntax
 execute pathogen#infect()
 
