@@ -57,6 +57,6 @@ tt
 ### move lines
 select lines and:
 ```
-Shift[hjkl]
+Shift[kj]
 ```
 

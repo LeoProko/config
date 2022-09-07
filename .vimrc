@@ -23,6 +23,9 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+" Move lines left and right
+nnoremap <S-j> :m+<CR>==
+nnoremap <S-k> :m-2<CR>==
 
 
 " NERDTree
@@ -46,11 +49,6 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
-
-
-" Vim Move
-let g:move_normal_option = 1
-let g:move_key_modifier_visualmode = 'S'
 
 
 " Pathogen for syntax
