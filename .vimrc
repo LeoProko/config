@@ -23,9 +23,13 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-" Move lines left and right
+" Move lines
 nnoremap <S-j> :m+<CR>==
 nnoremap <S-k> :m-2<CR>==
+inoremap <S-j> <Esc>:m+<CR>==gi
+inoremap <S-k> <Esc>:m-2<CR>==gi
+vnoremap <S-j> :m'>+<CR>gv=gv
+vnoremap <S-k> :m-2<CR>gv=gv
 
 
 " NERDTree
