@@ -68,6 +68,8 @@ nnoremap <leader>td :tab YcmCompleter GoTo<CR>
 nnoremap <leader>rr :YcmCompleter RefactorRename 
 " Remove preview window
 set completeopt-=preview
+" Only flake8 because pylint so slow
+let g:syntastic_python_checkers=['flake8']
 
 " Window Chooser
 " Mapping
