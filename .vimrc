@@ -64,6 +64,8 @@ let g:ycm_enable_inlay_hints = 1
 nnoremap <leader>dd :aboveleft YcmCompleter GoTo<CR>
 nnoremap <leader>sd :rightbelow vertical YcmCompleter GoTo<CR>
 nnoremap <leader>td :tab YcmCompleter GoTo<CR>
+" Refactor rename
+nnoremap <leader>rr :YcmCompleter RefactorRename 
 " Remove preview window
 set completeopt-=preview
 

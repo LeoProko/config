@@ -34,6 +34,11 @@ F3
 \td
 ```
 
+### refactor rename
+```
+\rr
+```
+
 ### choose window
 ```
 - [window or tab num]
