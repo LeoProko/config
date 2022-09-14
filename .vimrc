@@ -31,6 +31,24 @@ inoremap <S-k> <Esc>:m-2<CR>==gi
 vnoremap <S-j> :m'>+<CR>gv=gv
 vnoremap <S-k> :m-2<CR>gv=gv
 
+" Backup, swap and undos storage
+set directory=~/.vim/dirs/tmp     " directory to place swap files in
+set backup                        " make backup files
+set backupdir=~/.vim/dirs/backups " where to put backup files
+set undofile                      " persistent undos - undo after you re-open the file
+set undodir=~/.vim/dirs/undos
+set viminfo+=n~/.vim/dirs/viminfo
+" create needed directories if they don't exist
+if !isdirectory(&backupdir)
+    call mkdir(&backupdir, "p")
+endif
+if !isdirectory(&directory)
+    call mkdir(&directory, "p")
+endif
+if !isdirectory(&undodir)
+    call mkdir(&undodir, "p")
+endif
+
 
 " NERDTree
 " Open navigation on F3
@@ -60,8 +78,6 @@ execute pathogen#infect()
 
 
 " YouCompleteMe
-" Use homebrew's clangd
-let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
 " Inlay hints
 let g:ycm_enable_inlay_hints = 1
 " Go to
@@ -72,12 +88,9 @@ nnoremap <leader>td :tab YcmCompleter GoTo<CR>
 nnoremap <leader>rr :YcmCompleter RefactorRename 
 " Remove preview window
 set completeopt-=preview
-" Only flake8 because pylint so slow
-let g:syntastic_python_checkers=['flake8']
 
 " Window Chooser
 " Mapping
 nmap - <Plug>(choosewin)
 " Show big letters
 let g:choosewin_overlay_enable = 1
-
