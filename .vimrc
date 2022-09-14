@@ -30,6 +30,8 @@ inoremap <S-j> <Esc>:m+<CR>==gi
 inoremap <S-k> <Esc>:m-2<CR>==gi
 vnoremap <S-j> :m'>+<CR>gv=gv
 vnoremap <S-k> :m-2<CR>gv=gv
+" Line number at the bottom of screen
+set ruler
 
 " Backup, swap and undos storage
 set directory=~/.vim/dirs/tmp     " directory to place swap files in
