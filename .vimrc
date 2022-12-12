@@ -94,3 +94,16 @@ set completeopt-=preview
 nmap - <Plug>(choosewin)
 " Show big letters
 let g:choosewin_overlay_enable = 1
+
+
+" Clang format
+function! MakeClangFormat()
+  if &modified && !empty(findfile('.clang-format', expand('%:p:h') . ';'))
+    let cursor_pos = getpos('.')
+    :silent %!clang-format
+    call setpos('.', cursor_pos)
+  endif
+endfunction
+
+autocmd BufWritePre *.h,*.hpp,*.c,*.cpp, :call MakeClangFormat()
+
